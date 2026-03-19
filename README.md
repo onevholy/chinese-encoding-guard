@@ -1,59 +1,33 @@
-# chinese-encoding-guard-skill-cli
+# chinese-encoding-guard
 
-NPM-installable CLI wrapper for:
-- `scripts/check_encoding.py` (UTF-8 + mojibake detection)
-- `scripts/fix_to_utf8.py` (auto-fix to UTF-8 with backups)
+Chinese encoding protection skill with:
+- UTF-8 + mojibake detection
+- Auto-fix to UTF-8 with backups
 
-## Install
+## One-command skill install (recommended)
 
-Global install from npm:
+Install directly as a Claude/Codex skill:
+
+```bash
+npx skills add https://github.com/onevholy/chinese-encoding-guard --skill chinese-encoding-guard
+```
+
+## Optional: install as npm CLI
 
 ```bash
 npm install -g chinese-encoding-guard-skill-cli
 ```
 
-Or run directly with npx:
-
-```bash
-npx chinese-encoding-guard-skill-cli check --help
-```
-
-## Commands
-
-Check encoding:
+Then run:
 
 ```bash
 ceg check --paths ./frontend/src --strict
-ceg check --git-tracked --strict
-```
-
-Auto-fix to UTF-8 (with backups):
-
-```bash
-ceg fix --paths ./backend/src/main/resources
 ceg fix --git-tracked
-ceg fix --paths ./some/file.sql --dry-run
 ```
 
-One-command safe flow:
+## Skill location
 
-```bash
-ceg fix --git-tracked && ceg check --git-tracked --strict
-```
+The installable skill files are in:
 
-## Requirements
-
-- Node.js >= 18
-- Python 3 available in PATH (`py -3`, `python`, or `python3`)
-
-## Publish
-
-From this folder:
-
-```bash
-npm pack --dry-run
-npm publish --access public
-```
-
-If the package name is already taken, change the `name` in `package.json`.
+`skills/chinese-encoding-guard/`
 

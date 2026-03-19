@@ -10,10 +10,8 @@
   },
   "files": [
     "bin",
-    "scripts",
-    "SKILL.md",
-    "README.md",
-    "evals"
+    "skills",
+    "README.md"
   ],
   "keywords": [
     "encoding",

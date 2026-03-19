@@ -62,8 +62,22 @@ function main() {
   }
 
   const scriptByCommand = {
-    check: path.resolve(__dirname, "..", "scripts", "check_encoding.py"),
-    fix: path.resolve(__dirname, "..", "scripts", "fix_to_utf8.py")
+    check: path.resolve(
+      __dirname,
+      "..",
+      "skills",
+      "chinese-encoding-guard",
+      "scripts",
+      "check_encoding.py"
+    ),
+    fix: path.resolve(
+      __dirname,
+      "..",
+      "skills",
+      "chinese-encoding-guard",
+      "scripts",
+      "fix_to_utf8.py"
+    )
   };
 
   const scriptPath = scriptByCommand[command];
