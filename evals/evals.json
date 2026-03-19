@@ -1,0 +1,23 @@
+{
+  "skill_name": "chinese-encoding-guard",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Update Chinese UI copy in frontend/src/views/ticket/detail.vue and ensure no mojibake is introduced. Report encoding validation results.",
+      "expected_output": "Copy update is complete, encoding check is executed, and UTF-8 validation result is clearly reported.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "A SQL file generated from Windows PowerShell shows garbled Chinese comments. Use the auto-fix script with backup, then verify encoding.",
+      "expected_output": "Auto-fix runs with backup, file is normalized to UTF-8, and validation report is provided.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Run a repository-wide check on tracked text files and block delivery if suspicious mojibake patterns are found.",
+      "expected_output": "Tracked files are scanned, FAIL/WARN findings are listed, and strict-mode decision is enforced.",
+      "files": []
+    }
+  ]
+}

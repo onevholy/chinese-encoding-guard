@@ -1,0 +1,35 @@
+{
+  "name": "chinese-encoding-guard-skill-cli",
+  "version": "0.1.0",
+  "description": "NPM-installable CLI for Chinese encoding guard (UTF-8 check + auto-fix with backup).",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "ceg": "./bin/chinese-encoding-guard.js",
+    "chinese-encoding-guard": "./bin/chinese-encoding-guard.js"
+  },
+  "files": [
+    "bin",
+    "scripts",
+    "SKILL.md",
+    "README.md",
+    "evals"
+  ],
+  "keywords": [
+    "encoding",
+    "utf8",
+    "mojibake",
+    "chinese",
+    "skill",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check:help": "node ./bin/chinese-encoding-guard.js check --help",
+    "fix:help": "node ./bin/chinese-encoding-guard.js fix --help",
+    "pack:preview": "npm pack --dry-run"
+  }
+}
+
